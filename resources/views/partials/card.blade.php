@@ -8,7 +8,7 @@
                         <h6 class="card-subtitle mb-2"><strong>Nationality: </strong>{{$movie->nationality}}</h6>
                         <p class="card-text"><strong>Date:</strong> {{$movie->date}}</p>
                         <p class="card-text"><strong>Vote:</strong> {{$movie->vote }}</p>
-                        <a href="{{route("detail_page", ['id' => $movie->id])}}">Details</a>
+                        <a href="{{route("detail_page", ['id' => $movie->id])}}" class="text-white">Details</a>
                     </div>
                 </div>
             </div>

@@ -7,4 +7,15 @@ body{
 .card{
     background-color: #0282F9;
     border: 2px solid white;
+    min-height: 300px;
+
+    .card-body{
+        
+        a{
+            justify-self: end;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 10px;
+        }
+    }
 }
