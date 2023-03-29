@@ -15,4 +15,10 @@ class PageController extends Controller
         // dd($movies);
         return view('layouts.list_page', compact('movies'));
     }
+
+    public function movieDetail($id)
+    {
+        $movie = Movie::find($id);
+        return view('layouts.detail_page', compact('movie'));
+    }
 }

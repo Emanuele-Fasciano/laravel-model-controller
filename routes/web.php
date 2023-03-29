@@ -17,4 +17,5 @@ use App\Http\Controllers\PageController;
 */
 
 // collego la route al controller con [nomeController::class, nome funzione nel controller]
-Route::get('/', [PageController::class, 'listPage']);
+Route::get('/', [PageController::class, 'listPage'])->name("list");
+Route::get('/detail_page/{id}', [PageController::class, 'movieDetail'])->name("detail_page");
