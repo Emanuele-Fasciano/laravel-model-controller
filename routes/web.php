@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+// importo il controller (namespace controller + nome Controller)
+use App\Http\Controllers\PageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// collego la route al controller con [nomeController::class, nome funzione nel controller]
+Route::get('/', [PageController::class, 'listPage']);
